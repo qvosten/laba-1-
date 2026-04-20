@@ -12,6 +12,7 @@ def poisk(x, arr):
 ```
  2.Функция измерения времени
 ```python
+import time
 def measure_time(func, arr, x):
     start = time.perf_counter()
     func(x, arr)
@@ -21,6 +22,7 @@ def measure_time(func, arr, x):
 
 3.Функция генерации данных
 ```python
+import random
 def generate_array(n):
     arr = []
     for i in range(n):
