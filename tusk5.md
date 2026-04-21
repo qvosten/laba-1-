@@ -49,7 +49,7 @@ def measure_memory(func, data):
 ```python
 import time
 import random
-mport tracemallocdef selection_sort(arr):
+import tracemallocdef selection_sort(arr):
     for i in range(len(arr)):
         index_min = i
         for j in range(i + 1 , len(arr)):
