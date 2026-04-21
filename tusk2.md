@@ -10,9 +10,8 @@ def two_max(arr):
         if x > max_1:
             max_2 = max_1
             max_1 = x
-        elif x > max_2 and x != max_1:
+        elif x < max_1 and (x > max_2 or max_1 == max_2):
             max_2 = x
-
     return max_2
 
 ```
@@ -47,9 +46,8 @@ def two_max(arr):
         if x > max_1:
             max_2 = max_1
             max_1 = x
-        elif x > max_2 and x != max_1:
+        elif x < max_1 and (x > max_2 or max_1 == max_2):
             max_2 = x
-
     return max_2
 
 
@@ -74,7 +72,7 @@ for n in sizes:
 
  n | t,с |
 |---|---|
-| 100 | 0.0000040 |
-| 1000 | 0.0000247 |
-| 5000 | 0.0001178|
-| 10000 | 0.0002595 |
+| 100 | 0.0000057 |
+| 1000 | 0.0000439 |
+| 5000 | 0.0002046|
+| 10000 | 0.0004090 |
